@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Form Fields</title>
+  </head>
+  <body>
+
+    <p>
+      The form action usually contains a file or link to proess the form 
+      once we click submit
+    </p>
+    <form action = "create-profile.js" name = "user-create" targe="_self" method = "GET">
+      <fieldset>
+        <legend>Simple Text Input</legend>
+        <p>This is your most basic text input. We change input types with the 
+        type attribute.
+        </p>
+        <input type = "text" name = "FirstName"/>
+        <!-- This name upper (FirstName) is column name in the DB -->
+        <!-- We can also limit character length with another attribute -->
+        <label for = "Last Name"> Last Name</label>
+        <input type = "text" name = "LastName" maxlength= "10" placeholder = "Smith" />
+      </fieldset>
+
+      <fieldset>
+        <legend> Text Area Example</legend>
+        <label for = "Why Class">Why did you take this class?</label>
+        <textarea name = "whyClass" cols = "50", rows = "5"></textarea>
+      </fieldset>
+
+      <fieldset><legend>Different Input Types</legend>
+        <input type = "text"/>
+        <input type = "number" min = "1" max = "100">
+        <input type = "password">
+      </fieldset>
+
+      <fieldset><legend>Check Boxes</legend>
+        <p>Check boex allow the user to select more than 
+          one option/value at a time.</p>
+        <lable for = "pet">What pets do you have?</lable>
+        <input type = "checkbox" name ="pet" value = "dog"/> DOG
+        <input type = "checkbox" name ="pet" value = "cat"/> CAT
+        <input type = "checkbox" name ="pet" value = "chicken"/> CHICKEN
+      </fieldset>
+
+      <fieldset><legend>Radio Fields</legend>
+        <p>Radio Fields allow the user to select ONLY one option/value at a time.</p>
+        <lable for = "favoritePet">What animal is your favoriate?</lable>
+        <input type = "radio" name ="favoriatePet" value = "dog"/> DOG
+        <input type = "radio" name ="favoriatePet" value = "cat"/> CAT
+        <input type = "radio" name ="favoriatePet" value = "chicken"/> CHICKEN
+        <!-- name must matched!!! Else you can choose two options here -->
+      </fieldset>
+
+      <fieldset><legend>Select Option Dropdowns</legend>
+        <label for = "state">Pick a State</label>
+          <select name = "state">
+            <option values = "NY">New York</option>
+            <option values = "NJ">New Jersey</option>
+            <option values = "FL" selected>Florida</option>
+          </select>
+      </fieldset>
+
+      <input type = "button" value = "Submit" name = "submit-profile"/>
+      <input type = "button" value = "Submit D" name = "submit-disabled" disabled/>
+    </form>
+  </body>
+</html>

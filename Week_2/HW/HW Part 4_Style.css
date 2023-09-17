@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 40px;
+}
+
+.header nav{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.heading1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: darkred;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.meal-categories {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: wheat;
+}
+
+.meal-category-item {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
