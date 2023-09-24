@@ -1,8 +1,8 @@
 In this files, it has the lecture material and hw solutions.
 
 ### HW Solution:
-[HW3 Website](/Week_3/HW/HW.html)
-[HW3 Style](/Week_3/HW/HW_Style.css)
+- [HW3 Website](/Week_3/HW/HW.html)
+- [HW3 Style](/Week_3/HW/HW_Style.css)
 
 
 

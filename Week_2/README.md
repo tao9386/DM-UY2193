@@ -1,11 +1,11 @@
 In this files, it has the lecture material and hw solutions.
 
 ### HW Solution:
-[HW2 Part 1_Information Architecture](/Week_2/HW/HW%20Part%201_Clear%20Graph.png) (PPT)
-[HW2 Part 2_Article Reaction](/Week_2/HW/HW%20Part%202_Article%20Reaction.md)
-[HW2 Part 3_Wireframe](/Week_2/HW/HW%20Part%203_Wireframe.jpg)
-[HW2 Part 4](/Week_2/HW/HW%20Part%204.html)
-[HW2 Part 4_Style](/Week_2/HW/HW%20Part%204_Style.css)
+- [HW2 Part 1_Information Architecture](/Week_2/HW/HW%20Part%201_Clear%20Graph.png) (PPT)
+- [HW2 Part 2_Article Reaction](/Week_2/HW/HW%20Part%202_Article%20Reaction.md)
+- [HW2 Part 3_Wireframe](/Week_2/HW/HW%20Part%203_Wireframe.jpg)
+- [HW2 Part 4](/Week_2/HW/HW%20Part%204.html)
+- [HW2 Part 4_Style](/Week_2/HW/HW%20Part%204_Style.css)
 
 
 ### HW Instruction:
