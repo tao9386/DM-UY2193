@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Layout 1</title>
+        <style type = "text/css">
+            body {
+                margin: 0;
+            }
+
+            div, header, footer, section, aside, article, main {
+                min-height: 100px;
+                background-color: rgba(0,100,255,0.2);
+            }
+
+            main {
+                width: 960px;
+                margin: 0 auto;
+            }
+
+            /* reusable class that adds a block of empty content with zero height that will clear out both sides
+            to avoid our warpping issues. Use thsi class on the container/wrapper elemenet */
+
+            .clearfix::after{
+                display: block;
+                clear: both;
+                /* clear left & right */
+                /* to censure cross browser compatability */
+                height: 0;
+                font-size: 0;
+                /* space between font */
+                content: '';
+                /* one last fallback */
+                visibility: hidden;
+            }
+
+            /* descendant selectorfor more specificity */
+            article.col-pixels section{
+                /* (960px - 6 * 10px margins) / 3 */
+                /*  each section has 10px margin*/
+                width: 300px;
+                margin: 0 10px;
+                float: left;
+            }
+
+            article.col-fluid section{
+                width: 20%;
+                margin: 2.5%;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- In this example header and footer are not included with our wrapper -->
+        <header>
+            A header element with width 100%. We will cover menus in the next example!
+        </header>
+        <main>
+            <h1>Article 1: Pixel based</h1>
+            <article class = "col-pixels clearfix">
+                <h3>Article with 3 vertical sections/columns</h3>
+                <section><h3>Section 1</h3></section>
+                <section><h3>Section 2</h3></section>
+                <section><h3>Section 3</h3></section>
+            </article>
+        </main>
+
+        <h1>Article 2: Percent Based</h1>
+        <!-- fluid layout using % -->
+        <article class = "col-fluid clear-fix">
+            <h3>Article with 4 vertical sections/columns</h3>
+            <p>note that this aricle is outside of our main element - wich has a set pixel width</p>
+            <!-- start stacking our sections after our heading and ps that display block aka 100% by default -->
+            <section><h3>Section 1</h3></section>
+            <section><h3>Section 2</h3></section>
+            <section><h3>Section 3</h3></section>
+            <section><h3>Section 4</h3></section>
+            
+            <section><h3>Section 1</h3></section>
+            <section><h3>Section 2</h3></section>
+            <section><h3>Section 3</h3></section>
+            <section><h3>Section 4</h3></section>
+        </article>
+
+        <footer>
+            Some footer text
+        </footer>
+    </body>
+
+
+
+</html>

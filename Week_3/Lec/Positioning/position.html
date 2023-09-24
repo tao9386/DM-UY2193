@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Simple Navbar</title>
+        <style type = "text/CSS">
+            * {
+                /* defaully means for all tags */
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: "Helvetica", Arial, sans-serif;
+            }
+
+            ul {
+                /* remove all bullet points */
+                /* overflow prevent img over browser */
+                list-style-type: none;
+                overflow: hidden;
+                /* 999999 same as 999 if first two same, in short for one number */
+                background-color: #999;
+                /* make parent elements font size 0 becauase we use inline block to stack our Li, inline
+                block stacks each element like a letter in a word or paragraph, making the font size
+                zero ensures no funky extra margins */
+                font-size: 0;
+                /* why this will effect linke???? */
+            }
+
+            li {
+                /* make all list stack to each others */
+                display: inline-block;
+                /* 1rem = 16px */
+                font-size: 1rem;
+            }
+
+            li a {
+                /* make sure the link's clickable area is larger than just the text */
+                display: block;
+                text-align: center;
+                width: 100px;
+                padding: 10px;
+                /* remove underline on the link text */
+                text-decoration: none;
+                /* change the link color (unclick blue; click purpul) */
+                color: #333;
+            }
+
+            li a.active {
+                background-color: #888;
+                /* what is active function? defined class */
+            }
+
+            li a:hover {
+                background-color: #111;
+                color: #fff;
+            }
+
+            /* Positioning */
+            nav.fixed-nav {
+                position: fixed;
+                top: 0;
+                left: 0;
+                left: 0;
+                right: 0;
+            }
+
+            #abs {
+                background-color: red;
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+
+                position: Absolute;
+                top: 200px;
+                left: 50%;
+                z-index: -100;
+                /* in front, de */
+            }
+
+            #rel {
+                background-color: green;
+                height: 100px;
+                width: 100px;
+                overflow: hidden;
+
+                position: relative;
+                top: 100px;
+                right: 100px;
+                /* relvent to what it's shoule be. original location + changing*/
+            }
+
+            #rel-parent {
+                width: 500px;
+                height: 500px;
+                background-color: purple;
+
+                position: relative;
+            }
+
+            #abs-child {
+                width: 100px;
+                height: 100px;
+                background-color: yellow;
+
+                position: absolute;
+                right: 0;
+                /* why */
+            }
+        </style>
+
+    </head>
+    <boday>
+        <nav class = "fixed-nav">
+            <ul>
+                <li><a href = "#" class = "class">Link 1</a></li>
+                <li><a href = "#">Link 2</a></li>
+                <li><a href = "#">Link 3</a></li>
+                <li><a href = "#">Link 4</a></li>
+            </ul>
+        </nav>
+        <main>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lorem orci, condimentum eu fringilla sed, 
+                volutpat non ipsum. Nullam tempus laoreet condimentum. Vestibulum eget ultricies massa, a laoreet ligula. 
+                Integer ut venenatis velit. Vestibulum egestas finibus lacus a posuere. Vestibulum ante ipsum primis in 
+                faucibus orci luctus et ultrices posuere cubilia curae; Nunc at dolor non massa fringilla imperdiet. 
+                Sed diam nunc, eleifend varius ipsum et, rhoncus tincidunt ex. Vestibulum arcu sem, lacinia quis magna sit 
+                amet, luctus interdum arcu. Nam elementum dolor sit amet risus maximus, eget volutpat ligula tempor. 
+                Vivamus sit amet nunc nec neque sollicitudin convallis id in velit. Duis varius eget urna eget consectetur. 
+                Aenean semper velit ac elit dapibus vehicula. Fusce eget lacus vitae arcu pharetra efficitur vel eu tellus. 
+                Proin nec nisl ligula.
+            </p>
+            <p>
+                Aenean a enim odio. Praesent et suscipit erat, id placerat turpis. Ut mollis eleifend posuere. Phasellus 
+                placerat eleifend rutrum. Donec congue magna nec iaculis imperdiet. Cras quis efficitur libero. Vivamus 
+                quis tristique diam, ut blandit nunc. Duis quis turpis porta lectus fermentum feugiat. Praesent fermentum 
+                porta accumsan. Donec neque massa, porttitor vitae tortor placerat, varius volutpat elit. Ut convallis 
+                gravida metus eu condimentum. Phasellus non tempus lectus. Mauris in condimentum turpis, non euismod velit.
+            </p>
+            <p>
+                Aenean bibendum auctor eros, ut vestibulum enim tincidunt ac. Nam quis suscipit libero, sit amet scelerisque 
+                lorem. Sed interdum tellus eros, non malesuada arcu bibendum eu. Vestibulum ante ipsum primis in faucibus orci 
+                luctus et ultrices posuere cubilia curae; Vestibulum ut diam vitae purus pretium facilisis. Curabitur neque augue, 
+                vulputate nec orci sit amet, gravida blandit ante. Nam efficitur, odio sit amet iaculis tincidunt, diam dui pulvinar 
+                nisl, eget consectetur dolor est id orci. Sed sagittis iaculis velit, vitae vestibulum nibh porttitor ac. Nullam eu 
+                tempor risus. Proin at dignissim dolor. Praesent eu leo non lacus vestibulum malesuada. Aliquam malesuada non dolor 
+                id rhoncus.
+            </p>
+            <p>
+                Sed gravida mi justo, a tincidunt lorem pharetra at. Etiam lobortis libero ac ante porta ullamcorper. 
+                Nam consequat, erat sed dignissim aliquam, neque diam interdum ex, eu volutpat lectus lacus ac neque. 
+                Ut sed sagittis nisl. Nulla feugiat leo non orci faucibus tempus. Mauris consectetur metus vitae ex congue 
+                vulputate. Suspendisse non est pulvinar leo viverra ultrices. Integer odio enim, euismod quis lectus ac, 
+                pellentesque egestas quam.
+            </p>
+
+            <p>
+                Proin et turpis id quam dignissim mattis a euismod purus. Duis tincidunt facilisis turpis. Etiam pulvinar 
+                risus neque, eget dignissim nisi luctus sed. Sed dignissim enim sagittis, laoreet eros eu, fringilla augue.
+                Quisque mattis ipsum libero, ut tempus urna tincidunt sed. Quisque malesuada tristique lobortis. Nam 
+                pretium libero eget tempor fringilla. Duis cursus augue vitae luctus porta. Cras ullamcorper elementum
+                nisl at lacinia. Integer vel metus fermentum, finibus lorem et, mattis nibh. Suspendisse elementum ipsum 
+                mollis mauris consequat hendrerit. Suspendisse iaculis sem vitae odio efficitur luctus.
+            </p>
+
+            <div id = "abs">
+                Absolute positioning with no parent positioning defined!
+            </div>
+
+            <!-- if id, then only 1 -->
+            <div id = "rel">
+                Relative positioned div with no parent positioning defined!
+            </div>
+
+            <div id = "rel-parent">
+                <div id = "abs-child">
+
+                </div>
+            </div>
+        </main>
+    </boday>
+</html>
