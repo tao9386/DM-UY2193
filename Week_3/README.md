@@ -1,4 +1,4 @@
-In this files, it has the lecture material and hw solutions.
+In this file, it has the lecture material and hw solutions.
 
 ### HW Solution:
 - [HW3 Website](/Week_3/HW/HW.html)
