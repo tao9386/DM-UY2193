@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Responsive Layouts</title>
+    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class = "brand"><a href = "#">Logo</a></h1>
+      <!-- This is the menu icon thats hidden by defualt on desktop and tablet 
+        but shown on mobile 
+        spans display inline by default
+      -->
+      <span class = "mobile-menu">
+        <!-- case sensitive USE all lowercase -->
+        <span class = "material-icons">menu</span>
+      </span>
+
+      <!-- main nav is always on unordered list of links -->
+      <nav>
+        <!-- menu class for styling, menu ID for javascript -->
+        <ul class = "menu" id = "menu">
+          <li><a href = "#">Link 1</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  </body>
+</html>

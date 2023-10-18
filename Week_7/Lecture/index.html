@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javascript Data Types</title>
+    <script type = "text/Javascript">
+        // declare a variable
+        // works with all variable types
+        // var myVar;
+        // this one is for variables that will update/change over time;
+        let myVar;
+        // this one is for a known constant value. Will NOT and can NOT change over time
+        // const myVar;
+        // assign a value
+        myVar = "number"
+        console.log("myVar's value is: ", myVar)
+
+        // we can also reassign a new value and new type to the same variable in JS
+        myVar = '8';
+        console.log(myVar)
+        console.log(typeof myVar)
+
+        // even though 8 is "8" in string quotes we can still do math with it
+        let myVar2 = myVar * 2
+        console.log(myVar2)
+        console.log(typeof myVar2)
+
+        // we can print a maxture of strings and variables
+        let temp = 54
+        console.log("Todays temperature is ", temp, " degrees F.")
+
+        // lets make a function!
+        // declare and define a function
+        const notDeletable = "I can be used in a function or anywhere elese because I', global!"
+        function sumVals(num1, num2){
+            // variable to kill outside of this function
+            const deletable = "I'm dead outside of here!";
+            //const deletable = 'I'm dead outside of here!' // error for having ' inside the ''
+            // this global variable can be used anywhere
+            // console.log(notDeletable)
+
+            var mySum = num1 + num2;
+            // let: will change in the future; const: will not change; var: don't know if change
+            console.log(mySum);
+            return mySum
+        }
+
+        // excute a function
+        console.log(notDeletable)
+        // this will be undefined = does exist because it was declared and scoped 
+        // within a single function
+        // execute a function
+        let myAddeNum = sumVals(1234,5678)
+        console.log(myAddeNum)
+
+        //booleans and conditionals
+        let isOn = true
+
+        console.log(isOn)
+        console.log(typeof isOn)
+        console.log(switchOnOff())
+
+        
+        function switchOnOff() {
+            isOn 
+            if (isOn === true) {
+                console.log('isOn is currently ', isOn, ' Swichting to false now')
+                isOn = false
+            } else {
+                console.log('isOn is currently ', isOn, ' Swiching to true now')
+                isOn = true
+            }
+
+            // a == 8
+            // a = 8 is ture OR a = '8'
+            // a === 8
+            // a = 8 as a number is the only ture
+        }
+        console.log(switchOnOff())
+
+        // i++ is i = i + 1
+        // i-- is i = i - 1
+        // i+=3 is i = i + 3
+
+        // beware of infinite looops > your statement needs to enventually evaluate to false to exit
+
+        function countToN(n) {
+            // This is our loop
+            for (var i = 0; i <= n; i++){
+                console.log(i)
+                // 
+            }
+        }
+
+        countToN(8)
+
+
+    </script>
+  </head>
+  <body>
+    <button onclick = "sumVals(273654, 349867)">Call sumVals function</button>
+    <button onclick = "switchOnOff()">Toggle On/Off</button>
+    <button onclick = "countToN(8)">Count to 8</button>
+  </body>
+</html>
