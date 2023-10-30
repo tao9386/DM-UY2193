@@ -2,4 +2,4 @@
 #### Also, I added this CSS style.
 
 ### Midterm Solution:
-- [Midterm(+JS) Homepage](/index.html)
+- [Midterm(+JS) Homepage](/Midterm%20Project%20+%20JS/index.html)
