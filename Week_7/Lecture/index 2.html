@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Document Object Model</title>
+  </head>
+  <body>
+    <button onclick = "addSingleP()">Add a single P using strings</button>
+    <script type = "text/javascript">
+      const content = document.getElementBYID('content')
+
+      function addSingleP () {
+        content.innerHTML = '<p>This is a poorly instantiated p tag using string trickery!<p/>'
+      }
+
+      // proper dynamic DOM
+      function addMultiP(num) {
+        // start
+
+        for(var i = 0; i < num; i++){
+          var p = document.createElement('P')
+          // p = <p></p>
+          // create a text node to go inside our p node
+          var text = document.createTextNode('this is paragraph number ' + (i+1))
+          // append the text to the p
+          p.appendChild(text)
+
+          // var p = <p>this is paragraph number i </p>
+          // append the P to our content div
+
+          content.appendChild(p)
+
+          // p.classList.add('newClass')
+
+
+        }
+      }
+    </script>
+  </body>
+</html>

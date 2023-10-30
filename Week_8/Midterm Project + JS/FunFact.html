@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juntao Chu's Fun Fact</title>
+    <meta
+    name="portfolio-fun-fact"
+    content="This website is for Juntao Chu's Fun fact"/>
+    <link rel = "stylesheet" href = "fun_style.css"/> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <h1>Fun Fact🥳</h1>
+  </hr>
+    <h4>Click the Button for a Fun Fact!</h4>
+    <button type="button" id="changeBtn">Click</button>
+    <div id = "FunFact">
+        <h2 id = "funFact">Fun Fact</h2>
+        <!-- <div id = "graph1">Graph1</div>
+        <div id = "graph2">Graph2</div>
+        <div id = "graph3">Graph3</div> -->
+    </div>
+
+    <script type="text/javascript">
+        const Fact_Name = [
+            "Travel",
+            "Painting",
+            "Math"
+        ];
+
+        let currIndex = 0;
+        function updateFun(){
+            document.getElementById('funFact').innerText = `Fun Fact: ${Fact_Name[currIndex]}`;
+            // document.getElementById('FunFact').innerText = `Graph 1 for hobby of  ${Fact_Name[currIndex]}`;
+            // document.getElementById('FunFact').innerText = `Graph 2 for hobby of  ${Fact_Name[currIndex]}`;
+            // document.getElementById('FunFact').innerText = `Graph 2 for hobby of  ${Fact_Name[currIndex]}`;
+            currIndex = (currIndex + 1) % Fact_Name.length;
+        }
+
+        document.getElementById('changeBtn').addEventListener('click', updateFun);
+    </script>
+  </body>
+</html>
