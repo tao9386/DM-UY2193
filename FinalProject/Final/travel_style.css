@@ -1,0 +1,103 @@
+body {
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-header {
+    background-color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(52, 32, 32, 0.1);
+}
+
+.navbar-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header-menu{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-header a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-header a:hover {
+    color: #69b3a2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 40px; 
+    font-weight: 700;
+    color: #333; 
+    text-align: center;
+}
+
+.custom-margin-top {
+    margin-top: 0;
+}
+
+.card-link {
+    color: inherit; /* This makes the link color inherit from the parent, which is typically black */
+    text-decoration: none; /* This removes the underline from the link */
+    display: block; /* This makes the link fill the container */
+}
+  
+.card-link:hover,
+.card-link:focus {
+    text-decoration: none; /* This ensures that hovering or focusing doesn't add text decoration */
+}
+
+
+.inner {
+    overflow: hidden;
+    position: relative;
+  }
+  
+.inner img {
+    width: 100%;
+    transition: transform 0.5s ease;
+    display: block;
+    border: 5px solid white; /* White inner border */
+}
+  
+.inner:hover img {
+    transform: scale(1.1);
+}
+  
+.card {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for each card */
+}
+  
+.card-body a {
+    color: black; /* Style for the title links */
+  }
+  
+.card-title {
+    margin: 0; /* Remove default margins */
+  }
+  
+.image-bird {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%; /* Makes the image take up 50% of the screen width */
+    height: auto; /* Keeps the image's aspect ratio */
+}
+  

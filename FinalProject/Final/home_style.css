@@ -1,0 +1,171 @@
+body {
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.navbar-header {
+    background-color: white;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-header a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar-header a:hover {
+    color: #69b3a2;
+}
+
+.navbar-header-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.outer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%
+}
+
+.content-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 33.33%;
+    transition: width 0.3s;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-box .icon-box {
+    padding: 30px 0 20px 0;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+    margin-right: 10px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.content-box .icon-box:last-child {
+    margin-right: 0; 
+    /* no extra space after last one */
+}
+
+
+.content-box .icon{
+    vertical-align: middle;
+    width:35px;
+    height: 35px;
+}
+
+.colored-word-homepage {
+    color: #69b3a2;
+}
+
+h1 {
+    font-size: 40px;  
+}
+
+.content-box .button{
+    margin-top: 5rem;
+    text-decoration: none;
+    color: #eac69a;
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding: 2rem 4rem;
+    border-radius: 4px;
+    border: 3px solid #eac69a;
+}
+
+
+.self-intro {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 160px;
+    padding: 15px;
+    align-items: center;
+}
+
+.self-photo-container{
+    flex: 0.3;
+    padding: 15px;
+}
+
+.self-intro-text{
+    flex:0.7
+}
+
+.self-photo {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.contact {
+    width: 50%;
+}
+
+@media only screen and (max-width: 750px) {
+    .content-box {
+        width: 50%;  /* 1/3 of the screen width for larger screen */
+    }
+
+    .self-intro {
+        flex-direction: column;
+    }
+
+    .self-photo-container{
+        width: 100%;
+        text-align: center;
+    }
+
+    .self-photo {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .self-intro-text{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+/* 
+Reference
+1. icons are from iconfinder
+*/
