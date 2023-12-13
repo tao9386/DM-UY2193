@@ -114,4 +114,6 @@ h2 {
     object-fit: contain; /* This will ensure the image fits inside the box */
 }
   
-  
+.hidden {
+    display: none;
+}
