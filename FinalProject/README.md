@@ -20,6 +20,18 @@
 ### Step 10: Lazy load
 
 ## Learning
-1. How to deal with many images in web
+1. How to deal with many images in web.
 2. Utilize js lirary/Bootstrap to improve website.
-3. 
+3. How to do lazy load.
+4. Learn add image element into website.
+
+
+## Issue
+1. Don't know how to do lazy load
+2. Don't know how to add image into database
+
+## Next Step
+1. Publish to AWS.
+
+## Source code
+Lazy Load Part
